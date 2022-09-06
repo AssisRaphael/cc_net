@@ -17,7 +17,7 @@
         "drop",
         "split_by_lang"
     ],
-    "execution": "auto",
+    "execution": "slurm",
     "output_dir": "data",
     "mined_dir": "mined_data",
     "target_size": "4G",
