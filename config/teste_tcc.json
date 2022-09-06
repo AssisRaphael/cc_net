@@ -1,10 +1,10 @@
 {
     "dump": "2019-09",
-    "hash_in_mem": 12,
-    "num_shards": 12,
-    "num_segments_per_shard": 400,
+    "hash_in_mem": 1,
+    "num_shards": 1,
+    "num_segments_per_shard": 1,
     "cleanup_after_regroup": false,
-    "mine_num_processes": 12,
+    "mine_num_processes": 1,
     "lang_whitelist": ["pt"],
     "lm_languages": ["pt"],
     "pipeline": [
@@ -18,9 +18,9 @@
         "split_by_lang"
     ],
     "execution": "auto",
-    "output_dir": "data",
+    "output_dir": "teste_tcc",
     "mined_dir": "mined_data",
-    "target_size": "4G",
+    "target_size": "2M",
     "keep_bucket": ["head"],
-    "cache_dir": "data/wet_cache"
+    "cache_dir": "teste_tcc/wet_cache"
 }
