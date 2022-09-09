@@ -19,8 +19,8 @@ from cc_net.process_wet_file import CCSegmentsReader
 
 # Set this to a directory to use as cache for intermediary files.
 # This helps for debugging.
-WET_CACHE = None
-# WET_CACHE = Path("wet_cache")
+#WET_CACHE = None
+WET_CACHE = Path("wet_cache")
 
 S3_BUCKET = "https://dl.fbaipublicfiles.com/cc100"
 VERSION = "1.0.0"
@@ -41,20 +41,20 @@ CC_100_SNAPSHOTS = [
 ]
 
 BIG_LANGUAGES = {
-    "es_XX",
-    "fr_XX",
-    "de_DE",
-    "ja_XX",
-    "ru_RU",
-    "zh_CN",
-    "en_XX",
-    "it_IT",
-    "ar_AR",
-    "nl_XX",
-    "pl_PL",
+    #"es_XX",
+    #"fr_XX",
+    #"de_DE",
+    #"ja_XX",
+    #"ru_RU",
+    #"zh_CN",
+    #"en_XX",
+    #"it_IT",
+    #"ar_AR",
+    #"nl_XX",
+    #"pl_PL",
     "pt_XX",
-    "tr_TR",
-    "zh_TW",
+    #"tr_TR",
+    #"zh_TW",
 }
 
 
