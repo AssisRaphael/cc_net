@@ -1,0 +1,25 @@
+{
+    "dump": "2020-29",
+    "hash_in_mem": 8,
+    "num_shards": 8,
+    "mine_num_processes": 8,
+    "num_segments_per_shard": 2500,
+    "lang_whitelist": ["pt"],
+    "lm_languages": ["pt"],
+    "pipeline": [
+        "dedup",
+        "lid",
+        "keep_lang",
+        "sp",
+        "lm",
+        "pp_bucket",
+        "drop",
+        "split_by_lang"
+    ],
+    "execution": "auto",
+    "output_dir": "data",
+    "mined_dir": "mined_data",
+    "target_size": "4G",
+    "keep_bucket": ["head", "middle"],
+    "cache_dir": "data/wet_cache"
+}
