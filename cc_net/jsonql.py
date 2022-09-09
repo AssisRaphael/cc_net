@@ -1102,7 +1102,7 @@ def request_get_content(url: str, n_retry: int = 5) -> bytes:
             warnings.warn(
                 f"Swallowed error {e} while downloading {url} ({i} out of {n_retry})"
             )
-            time.sleep(60 * i)
+            time.sleep(10 * 2 ** i)
     dl_time = time.time() - t0
     dl_speed = len(r.content) / dl_time / 1024
     logging.info(
