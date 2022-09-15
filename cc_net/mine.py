@@ -298,7 +298,7 @@ def mine(conf: Config) -> List[Path]:
         outputs = [mined_dir / f"{shard:04d}" for shard in range(conf.num_shards)]
 
     # TODO: try to reduce this / make it a function of "hash_in_mem" / num_langs
-    mem_gb = 14 + 1 * conf.hash_in_mem
+    mem_gb = 28 + 1 * conf.hash_in_mem
     timeout_hour = 15
     if "hashes" in conf.experiments:
         # HACK: used for generating paper figures
